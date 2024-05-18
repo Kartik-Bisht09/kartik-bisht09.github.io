@@ -194,6 +194,68 @@
     </div>
 
 </div>
+<script>
+    const AB="https://coding-week-2024-api.onrender.com/api/data"
 
+const getData = async()=>{
+    const res = await fetch(AB);
+    const data = await res.json();
+    const leftimage = document.querySelectorAll(".tag2");
+    for(let i=0;i<4;i++){
+    leftimage[i].innerHTML=data[i].type;
+    }
+    const leftimageheading=document.querySelector(".leftimageheading");
+    leftimageheading.innerHTML=data[0].headline;
+    const centerimageheading=document.querySelector(".centerimageheading");
+    centerimageheading.innerHTML=data[1].headline;
+    const rightimageheading=document.querySelectorAll(".rightimageheading");
+    rightimageheading[0].innerHTML=data[2].headline;
+    rightimageheading[1].innerHTML=data[3].headline;
+    console.log(data[0].image)
+
+    const leftimage1 = document.querySelector(".leftimage1");
+    leftimage1.setAttribute("style",`background-image: url(${data[0].image})`);
+
+    const centerimage= document.querySelector(".centerimage");
+    centerimage.setAttribute("style",`background-image: url(${data[1].image})`);
+
+    const upperimage=document.querySelector(".upperimage")
+    upperimage.setAttribute("style",`background-image: url(${data[2].image})`);
+
+    const lowerimage=document.querySelector(".lowerimage")
+    lowerimage.setAttribute("style",`background-image: url(${data[3].image})`);
+
+    const name=document.querySelector(".name")
+    name.innerHTML=data[0].author;
+
+    const namecenter=document.querySelectorAll(".namecenter")
+    for(let i=0;i<3;i++){
+        namecenter[i].innerHTML=data[i+1].author;
+    }
+
+    const date=document.querySelectorAll(".date")
+    for(let i=0;i<4;i++){
+        date[i+1].innerHTML=data[i].date;
+    }
+    const date1=document.querySelectorAll(".date1")
+    for(let i=0;i<6;i++){
+        date1[i].innerHTML=data[i+4].date;
+    }
+
+    const title=document.querySelectorAll(".title4")
+    for(let i=0;i<6;i++){
+        title[i].innerHTML=data[i+4].headline;
+    }
+
+    const image1 = document.querySelectorAll(".image1");
+    for(let i=0;i<6;i++){
+        image1[i].setAttribute("style",`background-image: url(${data[i+4].image})`);
+    }
+
+
+}
+getData();
+
+</script>
 </body>
 </html>
