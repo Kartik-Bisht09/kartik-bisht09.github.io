@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding:0;
+    border:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #F9F9F9;
+}
+.header{
+    width:100%vw;
+    height: 15vh;
+}
+.headertext{
+    background-color:#1E1D1B;
+    color:white;
+    font-size: 4rem;
+    padding:1rem;
+    background-image: url(https://img.freepik.com/premium-vector/black-grey-color-gradient-background-abstract-3d-pattern-modern-template_833641-728.jpg?w=1380);
+    background-size: cover;
+}
+.navbar{
+    width:100%;
+    height:7vh; /*3rem*/
+    display:flex;
+    align-items: center;
+    font-weight:500;
+}
+.navbutton{
+    font-size:1.2rem;
+    padding:14px;
+    margin:20px;
+   
+}
+.navbutton:hover{
+    border:2px solid black;
+    font-size:1.5rem;
+}
+.navbuttonhome{
+    margin-left:40px;
+    background-color:black;
+    color:white;
+}
+.search{
+    height:30px;
+    width:30px;
+}
+.sports{
+    margin-right:41%;
+}
+.newsbar{
+    background-color: #EEEEEE;
+    height:5vh;/*2.5rem*/
+    display:flex;
+    align-items: center;
+    font-size:1.1rem;
+}
+.breakingnews{
+    margin-left:4px;
+    font-weight: bolder;
+}
+.news{
+    margin-left:50px;
+    margin-right: 52%;
+    color:#697686;
+}
+.logo{
+    width :1.1rem;
+    height:2rem;
+    margin-left: 30px;
+    margin-top:10px;
+}
+.weather{
+    width:1.1rem;
+    margin-right: 10px;
+}
+.images{
+    display:flex;
+}
+.leftimages{
+    height:85vh;
+    width:55vw;
+    display:flex;
+    /* justify-content:space-evenly; */
+    align-items: center;
+}
+.leftimage1{
+    height:80%;
+    width :60%;
+    background-color:#ffffff;
+    border-radius: 3%;
+    margin-left:1.8333333333333333333vw;
+    margin-right:0.916666666666666666vw;
+    /* background-image: url(newspapr.jpg); */
+    background-color: grey;
+    background-image: url(leftphoto.jpg);
+    background-size: cover;
+    color:white;
+    /* display:flex;
+    flex-wrap: wrap;
+    align-items:end;
+    justify-content: center; */
+}
+.centerimage{
+    height:80%;
+    width :30%;
+    border-radius: 3%;
+    background-color: aqua;
+    margin-left:0.916666666666666666vw;
+    margin-right:1.8333333333333333333vw;
+    background-image: url(centerphoto1.jpg);
+    background-size: cover;
+    color:white;
+
+
+}
+.rightimages{
+    width:16.5vw;
+    height:80vh;
+
+    /* display:flex;
+    flex-wrap:wrap; */
+    
+}
+.upperimage{
+    height:40%;
+    width:100%;
+    background-color: rgb(149, 11, 11);
+    color:white;
+    margin-top:8.5vh;
+    margin-bottom:3.7vh;
+    border-radius: 3%;
+    background-image: url(newsaper.jpg);
+    background-size: cover;
+}
+.lowerimage{
+    height:40%;
+    width:100%;
+    margin-top:3.7vh;
+    margin-bottom:7.4vh;
+    background-color: rgb(218, 17, 17);
+    border-radius: 3%;
+    background-image: url(centerphoto.jpg);
+    background-size: cover;
+}
+.tag1{
+    background-color: rgb(0, 0, 0);
+    height:20px;
+    padding:2px;
+    border-radius: 15px;
+    color:white;
+    margin-left: 20px;
+    margin-right:10px;
+}
+.tag2{
+    background-color: rgb(0, 0, 0);
+    height:20px;
+    padding:2px;
+    border-radius: 15px;
+    color:white;
+    margin-right: 200px;
+}
+.font{
+    color:white;
+    /* display:inline; */
+    /* border:1px solid black; */
+}
+.tags{
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    top:250px;
+}
+.logoanddate{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border:1px solid black; */
+    position: relative;
+    top:250px;
+    margin-bottom: 10px;
+}
+.logo1{
+    /* margin-right: 50px; */
+    height:20px;
+    width:20px;
+    background-image: url(leftphoto.jpg);
+    background-size:cover;
+    border-radius: 50%;
+    margin-left:20px ;
+    margin-right:10px;
+}
+.logo2{
+    /* height:15px; */
+    width:20px;
+    
+}
+.name{
+    margin-right:90px;
+}
+.leftimageheading{
+    margin-left:20px ;
+    font-size: 2.5rem;
+    margin-bottom:10px;
+    position: relative;
+    top:250px;
+}
+.centerimageheading{
+    margin-left:20px ;
+    font-size: 1.6rem;
+    margin-bottom:10px;
+    position: relative;
+    top:250px;
+}
+/* .centerlogoanddate{
+    /* display:flex;
+    flex-wrap: wrap; */
+    /* align-items: center; */
+    /* border:1px solid black; */
+    /* position: relative;
+    top:220px;
+    margin-bottom:30px; */
+/* }  */
+.namecenter{
+    margin-right:100px;
+}
+.calendaranddate{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top:250px;
+    margin-left:20px;
+    color:white;
+}
+.righttags{
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+    top:50px;
+}
+.rightimageheading{
+    margin-left:20px ;
+    font-size: 1.3rem;
+    margin-bottom:10px;
+    position: relative;
+    top:50px;
+    color:white;
+}
+.rightlogoanddate{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border:1px solid black; */
+    position: relative;
+    top:50px;
+    margin-bottom: 10px;
+    color:white;
+}
+.rightcalendaranddate{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top:50px;
+    margin-left:20px;
+    color:white;
+}
+.rightcontent{
+    height:74vh;
+    width:28.5vw;
+    /* background-color: rgb(152, 215, 64); */
+}
+.headingofcontent{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    color:white;
+    margin-top:7.4vh;
+}
+.popular{
+    height:10vh;
+    width:12vw;
+    background-color: black;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    height:10vh;
+    width:12vw;
+    background-color: white;
+    display:flex;
+    font-size:1.5rem;
+    justify-content: center;
+    align-items: center;
+    color:#697686;
+}
+.contentlines{
+    display:flex;
+    flex-wrap: wrap;
+    /* align-items:center; */
+    max-height:60vh;
+    overflow:scroll;
+    width:24vw;
+    margin-left:40px;
+    
+    margin-right:35px;
+}
+.content1{
+    display:flex;
+    /* align-items: flex-start; */
+    height:11vh;
+    margin-top:15px;
+    background-color: white;
+}
+.image1{
+    background-color:blue;
+    height:11vh;
+    border-radius: 7px;
+    width:20%;
+    align-self: flex-start;
+    background-image: url(1.jpg);
+    background-size: cover;
+}
+.contentcalendar{
+
+    height:20px;
+    width:20px;
+    color:#697686;
+}
+.sidecontent{
+    display:flex;
+    flex-wrap: wrap;
+    width:80%
+    /* text-align: start; */
+}
+.title4{
+    margin-top: 10px;
+    margin-right:60px;
+    font-size: 1rem;
+    margin-left:20px;
+}
+.contentandcalender{
+    display:flex;
+    align-items:center;
+    margin-left:20px;
+
+}
+.dateright{
+    color:#697686;
+}
+.date1{
+    font-size: 0.95rem;
+    color:#697686
+}
